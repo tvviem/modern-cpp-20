@@ -1,19 +1,17 @@
 #include "phanso.h"
+#include "thuebao.h"
 #include <iostream>
 #include <vector>
 #include <stdexcept>
 
 int main() {
-  //phanso f;
-  //f.nhap();
-  //f.xuat();
   /*try {
     phanso k = f.nghich_dao();
     k.xuat();
   } catch (std::invalid_argument &e) {
     std::cerr << e.what() << std::endl;
     return -1;
-  }*/
+  }
 	phanso a(3, 7), b(4,9);
 	std::cout<<"a="; a.xuat();
 	std::cout<<"b="; b.xuat();
@@ -44,5 +42,13 @@ int main() {
 	for(const auto& a : v_phanso) {
 		a.xuat();
 	}
+	*/
+  thuebao a;
+	std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
+	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
+	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
+	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
+
+
   return 0;
 }          
