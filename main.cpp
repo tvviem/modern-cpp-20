@@ -5,50 +5,19 @@
 #include <stdexcept>
 
 int main() {
-  /*try {
-    phanso k = f.nghich_dao();
-    k.xuat();
-  } catch (std::invalid_argument &e) {
-    std::cerr << e.what() << std::endl;
-    return -1;
-  }
-	phanso a(3, 7), b(4,9);
-	std::cout<<"a="; a.xuat();
-	std::cout<<"b="; b.xuat();
-  int n;
-	std::cout<<"Nhap vao so luong phanso n=";
-	std::cin>>n;
-	//phanso *ds = new phanso[n];
-	std::vector<phanso> v_phanso;
- 	for(int i=1; i<=n; ++i) {
-		phanso temp;
-		temp.nhap();
-		v_phanso.push_back(temp);
-	}
-	for(const auto& a : v_phanso) {
-		a.xuat();
-	}
-	phanso max;
-	max = v_phanso[0];
-	for(int i=1; i<v_phanso.size(); ++i)
-		if(v_phanso[i]>max)
-			max = v_phanso[i];
-	std::cout<<std::endl<<"phan so max = ";
-	max.xuat();
-  // sap xep danh sach
-	// sapxep(v_phanso, n);
-	sapxep(v_phanso);
-	std::cout<<std::endl;
-	for(const auto& a : v_phanso) {
-		a.xuat();
-	}
-	*/
-  thuebao a;
-	std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
-	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
-	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
-	//std::cout<<"sizeof_obj: "<<sizeof(a)<<std::endl;
-
-
-  return 0;
+  //thuebao a;
+	//std::cin>>a;
+	//std::cout<<a;
+	thuebao b("0919238123", "hote asc", "New York", 100);
+	std::cout<<b;
+  thuebao c=b;
+	std::cout<<c;
+	std::cout<<"cuoc + VAT (b): "<<b.cuocVAT()<<std::endl;
+	std::cout<<"cuoc + VAT (c): "<<c.cuocVAT()<<std::endl;
+	thuebao d(c);
+	std::cout<<d.laysodt()<<std::endl;
+	std::cout<<d.layhoten()<<std::endl;
+	std::cout<<d.laydiachi()<<std::endl;
+	std::cout<<d.laysophut()<<std::endl;
+  return 0;   
 }          

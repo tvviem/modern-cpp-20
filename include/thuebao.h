@@ -9,7 +9,8 @@
 class thuebao {
 	public:
 		thuebao();
-		thuebao(char*, char*, char*, int=0);
+		thuebao(char const*, char const*, char const*, int=0);
+		//thuebao(char[], char[], char[], int=0);
 		thuebao(const thuebao&);
 		~thuebao() {
 			delete[] diachi;
@@ -22,10 +23,10 @@ class thuebao {
 		friend std::ostream& operator<<(std::ostream&, const thuebao&);
 		float tinhcuoc();
 		float cuocVAT();
-		char* laysodt();
-		char* layhoten();
+		char* laysodt() {return sodt;}
+		char* layhoten() {return hoten;}
 		char* laydiachi(){return diachi;}
-		int laysophut();
+		int laysophut() {return sophut;}
 
 	private:
 		char sodt[15];
