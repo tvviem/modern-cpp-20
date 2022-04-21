@@ -12,7 +12,9 @@ project(learncpp20
 #add_executable(learncpp20 main.cpp ${SRC_FILES})
 add_executable(learncpp20 main.cpp 
 								src/phanso.cpp 
-								src/thuebao.cpp)
+								src/thuebao.cpp
+                src/thuebao_stl.cpp)
+							
 target_include_directories(learncpp20 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 #add_subdirectory(lib/googletest)
 #add_subdirectory(tst)
